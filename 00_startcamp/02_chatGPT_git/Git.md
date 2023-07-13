@@ -1,4 +1,5 @@
 ctrl + ` -> 터미널 열기
+
 # Git 이란...
 > 분산 버전 관리 시스템
 
@@ -29,6 +30,10 @@ $git init
 $ rm -r .git : 파일삭제
 ```
 
+```bash
+$git rm —cached [파일명 공백 파일명]
+```
+
 ### 상태 확인 명령어
 ```bash
 $ git status :깃아 상태 보여줘
@@ -55,9 +60,45 @@ $ git config --global user.name "부울경_1반_옥세훈"
 $ git config --global --list
 ```
 
-터미널 삽입 shift+insert// crtl+v
+- 터미널 삽입 shift+insert// crtl+v
 
 ### 커밋 기록 확인하기
 ```bash
 $git log
 ```
+
+### 직전 커밋 수정하기
+```bash
+git commit --amend
+#vim에서 커밋 내용 수정하기
+#1.insert를 눌러서 - 삽입 상태로 만든다.
+#2.커밋 메세지를 수정한다.
+#3.esc를 눌러서 - 삽입 상태를 종료한다.
+#4.:wq를 입력해서 저장하고 종료한다.
+```
+### git 설정 초기화
+```bash
+#vim을 활용해서 설정 제거하기
+#vim git 설정 파일 열기
+$ vim ~/.gitconfig
+# insert 키: 수정 상태 만들기
+# --insert-- 인 상태에서 모든 내용 삭제
+# esc: 수정 상태 종료
+# :wq
+```
+
+$code ~/.gitconfig
+
+. 의 의미는 현재 폴더(위치)를 뜻함
+
+### log를 한줄로 요약
+
+```bash
+$git log --oneline
+```
+
+### 원격 저장소 
+
+- gitLab : 정보 공개를 내맘대로
+- gitHub : 오픈소스. 정보가 공개되어 있음
+
