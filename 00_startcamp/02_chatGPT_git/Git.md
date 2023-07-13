@@ -102,3 +102,24 @@ $git log --oneline
 - gitLab : 정보 공개를 내맘대로
 - gitHub : 오픈소스. 정보가 공개되어 있음
 
+
+### 원격 저장소에 등록
+```bash
+$git remote add {remote_nickname}{remote_url}
+```
+
+### 원격 저장소에 업로드
+$ git push origin master
+
+
+### 원격 저장소에 있는 내용 복제
+- 최초로 내려 받을 때 
+```bash
+$git clone responsitory_url
+```
+
+### 집에서 수정한 내용을 강의장 컴퓨터에서 받을때
+ ```bash
+ $git pull origin master
+ 
+ ```
